@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <ImageView
+        android:id="@+id/my_ads"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/social"/>
+
+
+        <LinearLayout
+            android:id="@+id/social"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/about"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/fb"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/fb_ic"/>
+            <ImageView
+                android:id="@+id/twitter"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/twitter_ic"/>
+            <ImageView
+                android:id="@+id/youtube"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/youtube_ic"/>
+
+        </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_above="@+id/exit"/>
+
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#F44336"/>
+
+
+
+
+
+
+</RelativeLayout>
